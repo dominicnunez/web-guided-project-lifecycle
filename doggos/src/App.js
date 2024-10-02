@@ -76,7 +76,7 @@ export default class App extends React.Component{
     
     render(){
         return(
-            <div>
+            <div className='App'>
                 <h1>Doggos Search</h1>
                 <SearchForm searchDogs={this.searchDogs}/>
                 {this.state.doggos.map((dog, index) => <img key={index} width="226" src={dog} alt="dog"/>)}
